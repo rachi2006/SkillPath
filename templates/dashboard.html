@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+
+    <h2>SkillPath 🚀</h2>
+
+    <!-- Profile Icon -->
+    <div class="profile">
+    <div class="profile-circle" onclick="toggleProfile()">
+        {{ user.username[0]|upper }}
+    </div>
+</div>
+
+<!-- PROFILE PANEL -->
+<div id="profilePanel" class="profile-panel">
+
+    <h3>{{ user.username }}</h3>
+
+    <p><strong>📊 Progress:</strong> {{ progress }}%</p>
+    <p><strong>📁 Contributions:</strong> {{ count }}</p>
+
+    <p><strong>🧠 Bio:</strong> {{ user.bio }}</p>
+    <p><strong>🎓 Education:</strong> {{ user.education }}</p>
+    <p><strong>🏫 College:</strong> {{ user.college }}</p>
+
+    <hr>
+
+    <form method="POST" action="/edit_profile">
+        <input type="text" name="bio" placeholder="Bio">
+        <input type="text" name="education" placeholder="Education">
+        <input type="text" name="college" placeholder="College">
+        <button type="submit">Update</button>
+    </form>
+
+    <br>
+    <a href="/logout">Logout</a>
+
+</div>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <!-- Header -->
+    <h2>Welcome {{ session['user'] }} 👋</h2>
+
+    <!-- Skill Input -->
+    <div class="card">
+        <form method="POST">
+            <input type="text" name="skill" placeholder="Enter skill (Flask, Django, Data Science...)" required>
+            <button type="submit">Generate</button>
+        </form>
+    </div>
+
+    <!-- Roadmaps -->
+    {% for r in roadmaps %}
+    <div class="card">
+
+        <!-- Skill Title -->
+        <h3>{{ r.skill }}</h3>
+
+        <!-- Full Course Button -->
+        <div style="margin-bottom: 10px;">
+            <a href="{{ r.course_link }}" target="_blank">
+                <button>📘 Open Full Course</button>
+            </a>
+
+            <a href="/delete/{{ r._id }}">🗑 Delete</a>
+        </div>
+
+        <!-- Topics -->
+        <ul>
+        {% for t in r.topics %}
+            <li>
+                <!-- Left side -->
+                <span>
+                    {{ t.title }} -
+                    <span class="{{ t.status }}">
+                        {{ t.status }}
+                    </span>
+                </span>
+
+                <!-- Right side -->
+                <span>
+                    <!-- Learn button -->
+                    <a href="{{ t.link }}" target="_blank">📚</a>
+
+                    <!-- Mark complete -->
+                    <a href="/update_status/{{ r._id }}/{{ loop.index0 }}">✔</a>
+                </span>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+    {% endfor %}
+
+</div>
+
+</body>
+<script>
+function toggleProfile() {
+    let panel = document.getElementById("profilePanel");
+    panel.style.display = (panel.style.display === "block") ? "none" : "block";
+}
+</script>
+</html>
