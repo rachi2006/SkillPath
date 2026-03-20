@@ -2,13 +2,16 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from pymongo import MongoClient
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
+from dotenv import load_dotenv
 import os
 
+load_dotenv()
+
 app = Flask(__name__)
-app.secret_key = "secret123"
+app.secret_key = os.getenv("SECRET_KEY")
 
 # ---------------- MONGODB ATLAS CONNECTION ---------------- #
-client = MongoClient("mongodb+srv://rachirachith8_db_user:CoNTW3p0h3l3LNiz@cluster0.xpnndxx.mongodb.net/?appName=Cluster0")
+client = MongoClient(os.getenv("MONGO_URI"))
 db = client["logindata"]
 users = db["users"]
 roadmaps = db["roadmaps"]
