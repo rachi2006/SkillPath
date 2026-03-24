@@ -1,4 +1,10 @@
-# learn_skills:<br><br>
+<h1 align="center">🚀 Learn Skills</h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=800&color=36BCF7&center=true&vCenter=true&width=600&lines=Welcome+to+Learn+Skills;Login+%2B+Roadmap+Generator;Track+Your+Learning+Journey" />
+</p>
+<br><br>
+
 # 🚀 Learn Skills – Login & Roadmap Generator
 
 ---
