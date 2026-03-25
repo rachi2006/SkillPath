@@ -3,7 +3,16 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=800&color=36BCF7&center=true&vCenter=true&width=600&lines=Welcome+to+Learn+Skills;Login+%2B+Roadmap+Generator;Track+Your+Learning+Journey" />
 </p>
-<br><br>
+<br>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=2500&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=🚀+Live+Project:+Learn+Skills;Click+Below+to+Explore+Now👇" />
+</p>
+
+<p align="center">
+  <a href="https://learn-skills.onrender.com">
+    <img src="https://img.shields.io/badge/🌐%20Visit%20Live%20Project-Click%20Here-blue?style=for-the-badge&logo=google-chrome" />
+  </a>
+</p>
 
 # 🚀 Learn Skills – Login & Roadmap Generator
 
