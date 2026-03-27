@@ -78,7 +78,8 @@ It helps users track their learning journey and follow structured paths for tech
 
 ---
 
-##📁 Project Structure:<br>
+## 📁 Project Structure
+
 <img width="545" height="222" alt="image" src="https://github.com/user-attachments/assets/76a49f58-5d23-4030-b569-27bf1357946d" /><br>
 
 
