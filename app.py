@@ -51,7 +51,123 @@ def generate_roadmap(skill):
                 {"title": "Deployment", "link": "https://render.com/", "status": "pending"}
             ]
         }
+    
+    elif "python" in skill_lower:
+        return {
+            "course_link": "https://docs.python.org/3/",
+            "topics": [
+            {"title": "Python Basics", "link": "https://docs.python.org/3/tutorial/", "status": "pending"},
+            {"title": "Control Flow", "link": "https://docs.python.org/3/tutorial/controlflow.html", "status": "pending"},
+            {"title": "Functions", "link": "https://docs.python.org/3/tutorial/functions.html", "status": "pending"},
+            {"title": "OOP", "link": "https://docs.python.org/3/tutorial/classes.html", "status": "pending"},
+            {"title": "Error Handling", "link": "https://docs.python.org/3/tutorial/errors.html", "status": "pending"},
+            {"title": "Decorators", "link": "https://docs.python.org/3/glossary.html#term-decorator", "status": "pending"},
+            {"title": "Async Programming", "link": "https://docs.python.org/3/library/asyncio.html", "status": "pending"},
+            {"title": "Testing (PyTest)", "link": "https://docs.python.org/3/library/unittest.html", "status": "pending"},
+            {"title": "Project: CLI Tool", "link": "https://docs.python.org/3/library/argparse.html", "status": "pending"},
+            ]
+        }
+    
+    elif "sql" in skill_lower:
+        return {
+            "course_link": "https://www.postgresql.org/docs/",
+            "topics": [
+            {"title": "SQL Basics", "link": "https://www.postgresql.org/docs/current/sql-syntax.html", "status": "pending"},
+            {"title": "Data Types", "link": "https://www.postgresql.org/docs/current/datatype.html", "status": "pending"},
+            {"title": "CRUD Operations", "link": "https://www.postgresql.org/docs/current/dml.html", "status": "pending"},
+            {"title": "Joins", "link": "https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-JOIN", "status": "pending"},
+            {"title": "Indexes", "link": "https://www.postgresql.org/docs/current/sql-createindex.html", "status": "pending"},
+            {"title": "Transactions", "link": "https://www.postgresql.org/docs/current/tutorial-transactions.html", "status": "pending"},
+            {"title": "Project: Simple Database", "link": "https://www.postgresql.org/docs/current/tutorial.html", "status": "pending"}
+            ]
+        }
+    
+    elif "mongodb" in skill_lower:
+        return {
+            "course_link": "https://www.mongodb.com/docs/",
+            "topics": [
+                {"title": "MongoDB Basics", "link": "https://www.mongodb.com/docs/manual/introduction/", "status": "pending"},
+                {"title": "CRUD Operations", "link": "https://www.mongodb.com/docs/manual/crud/", "status": "pending"},
+                {"title": "Indexes", "link": "https://www.mongodb.com/docs/manual/indexes/", "status": "pending"},
+                {"title": "Aggregation", "link": "https://www.mongodb.com/docs/manual/aggregation/", "status": "pending"},
+                {"title": "Replication & Sharding", "link": "https://www.mongodb.com/docs/manual/replication/", "status": "pending"},
+                {"title": "Project: NoSQL Database", "link": "https://www.mongodb.com/docs/manual/tutorial/", "status": "pending"}
+            ]
+        }
+    
+    elif "data science" in skill_lower:
+        return {
+            "course_link": "https://www.coursera.org/specializations/data-science-python",
+            "topics": [
+                {"title": "Python for Data Science", "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai", "status": "pending"},
+                {"title": "Data Analysis with Pandas", "link": "https://pandas.pydata.org/docs/", "status": "pending"},
+                {"title": "Data Visualization", "link": "https://matplotlib.org/stable/contents.html", "status": "pending"},
+                {"title": "Machine Learning Basics", "link": "https://scikit-learn.org/stable/tutorial/basic/tutorial.html", "status": "pending"},
+                {"title": "Project: Data Science Pipeline", "link": "https://www.kaggle.com/learn/data-science-projects", "status": "pending"}
+            ]
+        }
 
+    elif "machine learning" in skill_lower:
+        return {
+            "course_link": "https://www.coursera.org/learn/machine-learning",
+            "topics": [
+                {"title": "ML Basics", "link": "https://www.coursera.org/learn/machine-learning", "status": "pending"},
+                {"title": "Supervised Learning", "link": "https://scikit-learn.org/stable/supervised_learning.html", "status": "pending"},
+                {"title": "Unsupervised Learning", "link": "https://scikit-learn.org/stable/unsupervised_learning.html", "status": "pending"},
+                {"title": "Neural Networks", "link": "https://www.tensorflow.org/guide/keras/sequential_model", "status": "pending"},
+                {"title": "Project: ML Model", "link": "https://www.kaggle.com/learn/machine-learning-projects", "status": "pending"}
+            ]
+        },
+
+    elif "html" in skill_lower:
+        return {
+            "course_link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "topics": [
+                {"title": "HTML Basics", "link": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics", "status": "pending"},
+                {"title": "HTML Document Structure", "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html", "status": "pending"},
+                {"title": "Forms & Inputs", "link": "https://developer.mozilla.org/en-US/docs/Learn/Forms", "status": "pending"},
+                {"title": "Semantic HTML", "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element", "status": "pending"},
+                {"title": "Meta Tags & SEO", "link": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML", "status": "pending"},
+                {"title": "Accessibility (a11y)", "link": "https://developer.mozilla.org/en-US/docs/Web/Accessibility", "status": "pending"},
+                {"title": "Multimedia Elements", "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio", "status": "pending"},
+                {"title": "Project: Personal Website", "link": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Howto_build_a_website", "status": "pending"}
+            ]
+        }
+
+    elif "css" in skill_lower:
+        return {
+            "course_link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "topics": [
+                {"title": "CSS Basics", "link": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics", "status": "pending"},
+                {"title": "Selectors & Specificity", "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity", "status": "pending"},
+                {"title": "Box Model", "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model", "status": "pending"},
+                {"title": "Flexbox", "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox", "status": "pending"},
+                {"title": "Grid Layout", "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout", "status": "pending"},
+                {"title": "Responsive Design", "link": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design", "status": "pending"},
+                {"title": "Animations & Transitions", "link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations", "status": "pending"},
+                {"title": "Project: Portfolio Website", "link": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Howto_build_a_website", "status": "pending"}
+            ]
+        }
+
+    elif "javascript" in skill_lower:   
+        {
+            "course_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "topics": [
+                {"title": "JS Basics", "link": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics", "status": "pending"},
+                {"title": "Variables & Data Types", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types", "status": "pending"},
+                {"title": "Functions", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions", "status": "pending"},
+                {"title": "Objects & Arrays", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects", "status": "pending"},
+                {"title": "DOM Manipulation", "link": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction", "status": "pending"},
+                {"title": "Event Handling", "link": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener", "status": "pending"},
+                {"title": "ES6+ Features", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import", "status": "pending"},
+                {"title": "Asynchronous JS", "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous", "status": "pending"},
+                {"title": "Promises & Callbacks", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise", "status": "pending"},
+                {"title": "Fetch API & AJAX", "link": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API", "status": "pending"},
+                {"title": "JSON", "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON", "status": "pending"},
+                {"title": "Project: Interactive Website", "link": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Howto_build_a_website", "status": "pending"}
+            ]
+        }
+    
     else:
         return {
             "course_link": f"https://www.google.com/search?q={skill}+documentation",
