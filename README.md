@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://learn-skills-1.onrender.com">
+  <a href="https://skillpath-sc6x.onrender.com">
     <img src="https://img.shields.io/badge/🌐%20Visit%20Live%20Project-Click%20Here-blue?style=for-the-badge&logo=google-chrome" />
   </a>
 </p>
