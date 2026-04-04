@@ -1,4 +1,4 @@
-<h1 align="center">🚀 Learn Skills</h1>
+<h1 align="center">🚀 SkillPath – Personalized Learning Roadmap Generator</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=800&color=36BCF7&center=true&vCenter=true&width=600&lines=Welcome+to+Learn+Skills;Login+%2B+Roadmap+Generator;Track+Your+Learning+Journey" />
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://learn-skills-1.onrender.com">
+  <a href="https://skillpath-sc6x.onrender.com">
     <img src="https://img.shields.io/badge/🌐%20Visit%20Live%20Project-Click%20Here-blue?style=for-the-badge&logo=google-chrome" />
   </a>
 </p>
@@ -19,7 +19,7 @@
 ---
 
 ## 📌 Project Overview
-**Learn Skills** is a full-stack web application built using **Flask and MongoDB** that allows users to register, log in, and generate personalized learning roadmaps based on their skills.
+**skillPath** is a full-stack web application built using **Flask and MongoDB** that allows users to register, log in, and generate personalized learning roadmaps based on their skills.
 
 It helps users track their learning journey and follow structured paths for technologies like Python, Django, and more.
 
@@ -72,10 +72,11 @@ It helps users track their learning journey and follow structured paths for tech
 ---
 
 ## 📦 Libraries Used
-- pymongo  
-- flask-bcrypt  
-- bson  
-
+- Flask
+- pymongo
+- Flask-Bcrypt
+- bson
+- python-dotenv
 ---
 
 ## 📁 Project Structure
